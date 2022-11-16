@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using ElsieBudget.Models;
 
 namespace ElsieBudget.Views
 {
@@ -17,20 +18,38 @@ namespace ElsieBudget.Views
         {
             InitializeComponent();
         }
-
-        private void OnSaveButton_Clicked(object sender, EventArgs e)
+        protected override void OnAppearing()
         {
-         var filename1 =  Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                $"{Path.GetRandomFileName()}.notes.txt"); 
-         File.WriteAllText(filename1,ExpenseName.Text);
-         var filename2 = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                           $"{Path.GetRandomFileName()}.notes.txt");
-            File.WriteAllText(filename2, ExpenseAmount.Text);
+            var expense = (Expense)BindingContext;
+            if (expense != null && !string.IsNullOrEmpty(expense.FileName))
+            {
+                ExpenseText.Text = File.ReadAllText(expense.FileName);
+            }
 
         }
-
-        private void OnCancelButton_Clicked(object sender, EventArgs e)
+        private async void OnSaveButton_Clicked(object sender, EventArgs e)
         {
+            var expense = (Expense)BindingContext;
+            if (expense == null || string.IsNullOrEmpty(expense.FileName))
+            {
+                expense = new Expense();
+                expense.FileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                $"{Path.GetRandomFileName()}.notes.txt"); //create a file with random name
+                                                            
+            }
+            File.WriteAllText(expense.FileName, ExpenseText.Text);// write the texts into the file
+            await Navigation.PopModalAsync();//this line takes you back where you cAME(the mainpage)
+        }
+
+        private async void OnCancelButton_Clicked(object sender, EventArgs e)
+        {
+            var expense = (Expense)BindingContext;
+            if (File.Exists(expense.FileName))
+            {
+                File.Delete(expense.FileName);
+            }
+            ExpenseText.Text = string.Empty;
+            await Navigation.PopModalAsync();
 
         }
     }

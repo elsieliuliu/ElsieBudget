@@ -6,9 +6,11 @@ namespace ElsieBudget.Models
 {
     internal class Expense
     {
-        public string ExpenseName { get; set; }
-        public string ExpenseAmount { get; set; }
-        public DateTime ExpenseDate { get; set; }
+        //public string Name { get; set; }
+        //public string Amount { get; set; }
+        public string Text { get; set; }
+        public DateTime Date { get; set; }
         public string FileName { get; set; }
+        
     }
 }

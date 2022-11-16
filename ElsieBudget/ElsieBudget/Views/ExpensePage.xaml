@@ -4,12 +4,10 @@
              x:Class="ElsieBudget.Views.ExpensePage">
     <ContentPage.Content>
         <StackLayout>
-            <Editor x:Name="ExpenseName"
-                  Placeholder="Enter your expense name"
+            <Editor x:Name="ExpenseText"
+                  Placeholder="Enter your expense"
                   HeightRequest="100"/>
-            <Editor x:Name="ExpenseAmount"
-                    Placeholder="Enter your expense amount"
-                    HeightRequest="100"/> 
+           
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />

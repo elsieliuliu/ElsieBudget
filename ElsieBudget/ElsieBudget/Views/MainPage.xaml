@@ -11,8 +11,8 @@
                       ItemSelected="ExpenseListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="model:Expense">
-                        <TextCell  Text="{Binding ExpenseAmount}" 
-                                    Detail="{Binding ExpenseDate}" 
+                        <TextCell  Text="{Binding Text}" 
+                                    Detail="{Binding Date}" 
                                     TextColor="Black" 
                                     DetailColor="Aqua" 
                                     />
