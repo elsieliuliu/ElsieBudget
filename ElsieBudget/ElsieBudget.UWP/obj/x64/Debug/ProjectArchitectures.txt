@@ -1,0 +1,1 @@
+C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.UWP\ElsieBudget.UWP.csproj;x64
