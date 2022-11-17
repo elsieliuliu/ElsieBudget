@@ -41,6 +41,7 @@ namespace ElsieBudget.Views
         }
         private async void ExpenseListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+            
             await Navigation.PushModalAsync(new ExpensePage
             {
                 BindingContext = (Expense)e.SelectedItem //pass the content to the new page
