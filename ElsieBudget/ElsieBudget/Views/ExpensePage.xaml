@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Editor x:Name="ExpenseText"
-                  Placeholder="Enter your expense"
+                  Placeholder="Enter your expense name and amount."
                   HeightRequest="100"/>
            
             <Grid>

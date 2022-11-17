@@ -38,7 +38,14 @@ namespace ElsieBudget.Views
                                                             
             }
             File.WriteAllText(expense.FileName, ExpenseText.Text);// write the texts into the file
-            await Navigation.PopModalAsync();//this line takes you back where you cAME(the mainpage)
+            if (Navigation.ModalStack.Count > 0)
+            { 
+                await Navigation.PopModalAsync(); //this line takes you back where you cAME(the mainpage)
+            } else
+            {
+                Shell.Current.CurrentItem = (Shell.Current as AppShell).MainPageContent;
+            }
+               
         }
 
         private async void OnCancelButton_Clicked(object sender, EventArgs e)
