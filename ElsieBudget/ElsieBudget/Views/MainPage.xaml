@@ -6,21 +6,57 @@
 >
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="ExpenseListView"
+           
+        
+            <Grid>
+               
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                <Button x:Name="BudgetButton" Clicked="BudgetButton_Clicked"
+                        Text="Please enter your budget"/>
+
+
+
+
+                <ListView x:Name="BudgetListView" Grid.Row="1">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="model:Budget">
+                            <TextCell  Text="{Binding Text}" 
+                                    Detail="{Binding Date}" 
+                                    TextColor="Blue" 
+                                    DetailColor="LightPink" 
+                                    />
+
+                        </DataTemplate>
+
+                    </ListView.ItemTemplate>
+                </ListView>
+                <ListView x:Name="ExpenseListView"
                       Margin="20"
-                      ItemSelected="ExpenseListView_ItemSelected">
-                <ListView.ItemTemplate>
-                    <DataTemplate x:DataType="model:Expense">
-                        <TextCell  Text="{Binding Text}" 
+                      ItemSelected="ExpenseListView_ItemSelected"
+                          Grid.Row="2">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="model:Expense">
+                            <TextCell  Text="{Binding Text}" 
                                     Detail="{Binding Date}" 
                                     TextColor="Black" 
-                                    DetailColor="Aqua" 
+                                    DetailColor="LightPink" 
                                     />
-                    
-                    </DataTemplate>
-               
-                </ListView.ItemTemplate>
-            </ListView>
+
+                        </DataTemplate>
+
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </Grid>
+            
+
+
+           
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
