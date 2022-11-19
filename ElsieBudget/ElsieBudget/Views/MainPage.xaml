@@ -12,20 +12,25 @@
                
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50"/>
-                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="80"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 
                 <Button x:Name="BudgetButton" Clicked="BudgetButton_Clicked"
-                        Text="Please enter your budget"/>
+                        Text="Please enter your budget"
+                        BackgroundColor="ForestGreen"
+                        />
 
 
 
 
-                <ListView x:Name="BudgetListView" Grid.Row="1">
+                <ListView x:Name="BudgetListView" Grid.Row="1"
+                          Margin="20"
+                          ItemSelected="BudgetListView_ItemSelected_1">
                     <ListView.ItemTemplate>
                         <DataTemplate x:DataType="model:Budget">
-                            <TextCell  Text="{Binding Text}" 
+                            <TextCell  x:Name="BudgetTextCell"
+                                Text="{Binding Text}" 
                                     Detail="{Binding Date}" 
                                     TextColor="Blue" 
                                     DetailColor="LightPink" 

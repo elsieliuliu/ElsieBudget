@@ -18,16 +18,25 @@ namespace ElsieBudget.Views
         {
             InitializeComponent();
         }
+        protected override void OnAppearing()
+        {
+            var budget = (Budget)BindingContext;
+            if (budget != null && !string.IsNullOrEmpty(budget.FileName))
+            {
+                BudgetText.Text = File.ReadAllText(budget.FileName);
+            }
 
-        
+        }
 
-       
+
+
+
 
         private async void BudgetSave_Clicked_1(object sender, EventArgs e)
         {
             var budget = new Budget();
             budget.FileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-             $"{Path.GetRandomFileName()}.notes.txt"); //create a file with random name
+             $"{Path.GetRandomFileName()}.budget.notes.txt"); //create a file with random name
 
 
             File.WriteAllText(budget.FileName, BudgetText.Text);
@@ -41,6 +50,20 @@ namespace ElsieBudget.Views
                 Shell.Current.CurrentItem = (Shell.Current as AppShell).MainPageContent;
             }
 
+        }
+
+        private async void BudgetDelete_Clicked(object sender, EventArgs e)
+        {
+            {
+                var budget = (Budget)BindingContext;
+                if (File.Exists(budget.FileName))
+                {
+                    File.Delete(budget.FileName);
+                }
+                BudgetText.Text = string.Empty;
+                await Navigation.PopModalAsync();
+
+            }
         }
     }
 }

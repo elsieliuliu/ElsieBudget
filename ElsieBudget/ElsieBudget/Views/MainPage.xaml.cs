@@ -25,8 +25,8 @@ namespace ElsieBudget.Views
             var files = Directory.EnumerateFiles(
                 Environment.GetFolderPath
                 (Environment.SpecialFolder.LocalApplicationData),
-                "*.notes.txt");//go to the directory and find the files named something.notes.txt
-            
+                "*.expense.notes.txt");//go to the directory and find the files named something.notes.txt
+
             foreach (var file in files)
             {
                 var expense = new Expense
@@ -40,12 +40,12 @@ namespace ElsieBudget.Views
             ExpenseListView.ItemsSource = expenses.OrderByDescending(t => t.Date);
             //binding the source 
 
-           
-          
+
+
             var budgetfiles = Directory.EnumerateFiles(
                 Environment.GetFolderPath
                 (Environment.SpecialFolder.LocalApplicationData),
-               "*.notes.txt");
+               "*.budget.notes.txt");
             var budgets = new List<Budget>();
             foreach (var budgetfile in budgetfiles)
             {
@@ -59,14 +59,14 @@ namespace ElsieBudget.Views
             }
             BudgetListView.ItemsSource = budgets;
 
-            var budgettxt = (Expense)BindingContext;
-            if (budgettxt != null )
-            {
-                BudgetButton.IsVisible = false;
-
-            }
+            //var i = BudgetListView.ItemsSource;    
+           // if (i == null )
+           // {
+              //  BudgetButton.IsVisible = false;
+            //}
 
         }
+         
         private async void ExpenseListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             
@@ -78,14 +78,19 @@ namespace ElsieBudget.Views
 
         
 
-        private void BudgetListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-
-        }
+     
 
         private void BudgetButton_Clicked(object sender, EventArgs e)
         {
             Navigation.PushModalAsync(new BudgetPage()).Wait();
+        }
+
+        private async void BudgetListView_ItemSelected_1(object sender, SelectedItemChangedEventArgs e)
+        {
+            await Navigation.PushModalAsync(new BudgetPage
+            {
+                BindingContext = (Budget)e.SelectedItem //pass the content to the new page
+            });
         }
     }
 }

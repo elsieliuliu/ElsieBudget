@@ -34,7 +34,7 @@ namespace ElsieBudget.Views
             {
                 expense = new Expense();
                 expense.FileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                $"{Path.GetRandomFileName()}.notes.txt"); //create a file with random name
+                $"{Path.GetRandomFileName()}.expense.notes.txt"); //create a file with random name
                                                             
             }
             File.WriteAllText(expense.FileName, ExpenseText.Text);// write the texts into the file
