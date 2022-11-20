@@ -60,13 +60,15 @@ namespace ElsieBudget.Views
             BudgetListView.ItemsSource = budgets;
 
             //var i = BudgetListView.ItemsSource;    
-           // if (i == null )
-           // {
-              //  BudgetButton.IsVisible = false;
+            //if (i ==  )
+            // {
+            //  BudgetButton.IsVisible = false;
             //}
+            //if (Navigation.ModalStack.Count > 0)
+            //{ BudgetButton.IsVisible = false; }
 
         }
-         
+           
         private async void ExpenseListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             

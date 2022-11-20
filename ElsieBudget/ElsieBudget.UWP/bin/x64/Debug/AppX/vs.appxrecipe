@@ -68,7 +68,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget\bin\Debug\netstandard2.0\ElsieBudget.dll">
       <PackagePath>ElsieBudget.dll</PackagePath>
-      <Modified>2022-11-19T05:19:20.789</Modified>
+      <Modified>2022-11-19T20:36:32.276</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\elsie\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
