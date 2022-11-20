@@ -4,9 +4,25 @@
              x:Class="ElsieBudget.Views.BudgetPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Editor x:Name="BudgetText"
+                  Placeholder="Enter your monthly budget."
+                  HeightRequest="100"
+                    />
+            <Grid>
+               
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Button 
+                        x:Name="BudgetSave" Text="Save"
+                    Clicked="BudgetSave_Clicked_1" BackgroundColor="Pink"  />
+                <Button x:Name="BudgetDelete" Text="Delete"
+                        Clicked="BudgetDelete_Clicked" Grid.Column="1"
+                        BackgroundColor="Pink"/>
+
+
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
