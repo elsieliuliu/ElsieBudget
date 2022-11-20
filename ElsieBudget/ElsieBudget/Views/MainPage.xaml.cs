@@ -59,6 +59,13 @@ namespace ElsieBudget.Views
             }
             BudgetListView.ItemsSource = budgets;
 
+            if (budgetfiles.Count() > 0)
+            {
+                BudgetButton.IsVisible = false;
+            } else
+            {
+                BudgetButton.IsVisible = true;
+            }
             //var i = BudgetListView.ItemsSource;    
             //if (i ==  )
             // {
@@ -82,9 +89,9 @@ namespace ElsieBudget.Views
 
      
 
-        private void BudgetButton_Clicked(object sender, EventArgs e)
+        private async void BudgetButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new BudgetPage()).Wait();
+           await Navigation.PushModalAsync(new BudgetPage());
         }
 
         private async void BudgetListView_ItemSelected_1(object sender, SelectedItemChangedEventArgs e)
