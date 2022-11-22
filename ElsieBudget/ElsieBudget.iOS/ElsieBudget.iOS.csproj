@@ -142,4 +142,55 @@
       <Name>ElsieBudget</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\NewFolder1\Entertainment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\NewFolder1\Medical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\NewFolder1\Other.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\NewFolder1\Shopping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\NewFolder1\Transportation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\NewFolder1\Grocery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\NewFolder1\Housing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Entertainment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Grocery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Housing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon_Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon_Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Medical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Other.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Shopping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Transportation.png" />
+  </ItemGroup>
 </Project>

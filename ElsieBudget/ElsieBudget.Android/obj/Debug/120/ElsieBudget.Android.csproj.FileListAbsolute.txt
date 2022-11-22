@@ -634,3 +634,7 @@ C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.Android\obj\Debug\120\stamp\_
 C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.Android\obj\Debug\120\stamp\_GenerateJavaStubs.stamp
 C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.Android\obj\Debug\120\stamp\_GeneratePackageManagerJava.stamp
 C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.Android\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
+C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.Android\obj\Debug\120\res\drawable\add.png
+C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.Android\obj\Debug\120\res\drawable\icon_add.png
+C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.Android\obj\Debug\120\res\drawable\icon_home.png
+C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.Android\obj\Debug\120\res\drawable\medical.png

@@ -14,13 +14,13 @@
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.BackgroundColor" Value="Orange" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
                 <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
-                <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
+                <Setter Property="Shell.TabBarBackgroundColor" Value="Orange" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="Transparent"/>
                 <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
                 <Setter Property="Shell.TabBarTitleColor" Value="White"/>
             </Style>
@@ -30,8 +30,9 @@
     </Shell.Resources>
 
     <TabBar>
-        <ShellContent x:Name="Home" Title="Home" Icon="icon_about.png" ContentTemplate="{DataTemplate local:MainPage}" />
-        <ShellContent x:Name="Add" Title="Add" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ExpensePage}" />
+        <ShellContent x:Name="Home" Title="Home" Icon="icon_Home.png"  
+                      ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent x:Name="Add" Title="Add" Icon="icon_Add.png" ContentTemplate="{DataTemplate local:ExpensePage}" />
     </TabBar>
 
     <!--

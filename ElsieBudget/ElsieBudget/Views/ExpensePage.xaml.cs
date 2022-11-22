@@ -14,10 +14,19 @@ namespace ElsieBudget.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ExpensePage : ContentPage
     {
+        private List<CategoryIcon> categoryIcons;
         public ExpensePage()
         {
             InitializeComponent();
+
+            //categoryIcons = new List<CategoryIcon>();
+            //categoryIcons.Add(new CategoryIcon
+            //{
+                //IconFile = "Assets/Entertainment.png",
+                //Category = ExpenseCategory.Entertainment
+            //});
         }
+         
         protected override void OnAppearing()
         {
             var expense = (Expense)BindingContext;
@@ -25,6 +34,10 @@ namespace ElsieBudget.Views
             {
                 ExpenseText.Text = File.ReadAllText(expense.FileName);
             }
+            //try FromFile
+            
+
+            
 
         }
         private async void OnSaveButton_Clicked(object sender, EventArgs e)
@@ -59,5 +72,12 @@ namespace ElsieBudget.Views
             await Navigation.PopModalAsync();
 
         }
+
+        private void grocery_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
+    
+
 }
