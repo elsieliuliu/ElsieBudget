@@ -32,7 +32,7 @@
     <TabBar>
         <ShellContent x:Name="Home" Title="Home" Icon="icon_Home.png"  
                       ContentTemplate="{DataTemplate local:MainPage}" />
-        <ShellContent x:Name="Add" Title="Add" Icon="icon_Add.png" ContentTemplate="{DataTemplate local:ExpensePage}" />
+        <ShellContent x:Name="Add" Title="Add" Icon="Add.png" ContentTemplate="{DataTemplate local:ExpensePage}" />
     </TabBar>
 
     <!--

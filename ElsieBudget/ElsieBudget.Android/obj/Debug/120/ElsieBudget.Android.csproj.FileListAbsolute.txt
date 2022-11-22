@@ -638,3 +638,9 @@ C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.Android\obj\Debug\120\res\dra
 C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.Android\obj\Debug\120\res\drawable\icon_add.png
 C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.Android\obj\Debug\120\res\drawable\icon_home.png
 C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.Android\obj\Debug\120\res\drawable\medical.png
+C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.Android\obj\Debug\120\res\drawable\entertainment.png
+C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.Android\obj\Debug\120\res\drawable\housing.png
+C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.Android\obj\Debug\120\res\drawable\grocery.png
+C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.Android\obj\Debug\120\res\drawable\other.png
+C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.Android\obj\Debug\120\res\drawable\shopping.png
+C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.Android\obj\Debug\120\res\drawable\transportation.png

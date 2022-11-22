@@ -93,25 +93,25 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Resources\drawable\Entertainment.png" />
+    <AndroidResource Include="Resources\drawable\Entertainment.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Resources\drawable\Grocery.png" />
+    <AndroidResource Include="Resources\drawable\Grocery.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Resources\drawable\Housing.png" />
+    <AndroidResource Include="Resources\drawable\Housing.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Medical.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Resources\drawable\Other.png" />
+    <AndroidResource Include="Resources\drawable\Other.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Resources\drawable\Shopping.png" />
+    <AndroidResource Include="Resources\drawable\Shopping.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Resources\drawable\Transportation.png" />
+    <AndroidResource Include="Resources\drawable\Transportation.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Add.png" />

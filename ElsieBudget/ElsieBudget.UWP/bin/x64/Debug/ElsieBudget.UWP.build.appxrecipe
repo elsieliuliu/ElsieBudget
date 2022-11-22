@@ -61,8 +61,35 @@
     <AppxPackagedFile Include="C:\Users\elsie\.nuget\packages\xamarin.forms\5.0.0.2196\lib\uap10.0.16299\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.UWP\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.UWP\Add.png">
+      <PackagePath>Add.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.UWP\Entertainment.png">
+      <PackagePath>Entertainment.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.UWP\Grocery.png">
+      <PackagePath>Grocery.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.UWP\Housing.png">
+      <PackagePath>Housing.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.UWP\Icon_Add.png">
+      <PackagePath>Icon_Add.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.UWP\Icon_Home.png">
+      <PackagePath>Icon_Home.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.UWP\Medical.png">
+      <PackagePath>Medical.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.UWP\Other.png">
+      <PackagePath>Other.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.UWP\Shopping.png">
+      <PackagePath>Shopping.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.UWP\Transportation.png">
+      <PackagePath>Transportation.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.UWP\xamarin_logo.png">
       <PackagePath>xamarin_logo.png</PackagePath>
@@ -72,6 +99,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.UWP\icon_feed.png">
       <PackagePath>icon_feed.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.UWP\Grocery.jfif">
+      <PackagePath>Grocery.jfif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.UWP\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Kal Project\ElsieBudget\ElsieBudget\ElsieBudget.UWP\bin\x64\Debug\ElsieBudget.UWP.xr.xml">
       <PackagePath>ElsieBudget.UWP.xr.xml</PackagePath>
