@@ -8,7 +8,7 @@ namespace ElsieBudget.Models
     internal enum ExpenseCategory
     {
         Grocery,
-        Transportation,
+       
         Entertainment,
         Housing,
         Medical,
@@ -18,13 +18,13 @@ namespace ElsieBudget.Models
     }
     internal class Expense
     {
-        //public string Name { get; set; }
-        //public string Amount { get; set; }
+       
         public string Text { get; set; }
         public DateTime Date { get; set; }
         public string FileName { get; set; }
         public ExpenseCategory Category { get; set; }
-        //public Expense(string text, ExpenseCategory category, DateTime date,
+
+        
            // string filename)
         //{
           //  Text = text;
@@ -33,6 +33,6 @@ namespace ElsieBudget.Models
            // FileName = filename;
         //}
 
-       
+  
     }
 }

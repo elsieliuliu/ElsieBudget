@@ -117,7 +117,9 @@
     <AndroidResource Include="Resources\drawable\Add.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icon_Add.png" />
+    <AndroidResource Include="Resources\drawable\Icon_Add.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Icon_Home.png" />

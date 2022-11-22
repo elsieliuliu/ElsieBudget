@@ -8,5 +8,10 @@ namespace ElsieBudget.Models
     {
         public string IconFile { get; set; }
         public ExpenseCategory Category { get; set; } 
+        public CategoryIcon(string iconFile, ExpenseCategory category)
+        {
+            IconFile = iconFile;
+            Category = category;
+        }
     }
 }

@@ -24,32 +24,38 @@
                 <Image Source="Medical.png" HeightRequest="50"  Grid.Column="0" 
                        Grid.Row="0"/>
                 <Button x:Name="Medical" Text="Medical" HeightRequest="20" Grid.Column="0"
-                        Grid.Row="1" BackgroundColor="ForestGreen" FontSize="12"/>
+                        Grid.Row="1" BackgroundColor="ForestGreen" FontSize="12"
+                        Clicked="Medical_Clicked"/>
                 
                 <Image Source="Housing.png" HeightRequest="50" Grid.Column="1" 
                        Grid.Row="0"/>
                 <Button x:Name="Housing" Text="Housing" HeightRequest="20" Grid.Column="1"
-                        Grid.Row="1" BackgroundColor="ForestGreen" FontSize="12"/>
+                        Grid.Row="1" BackgroundColor="ForestGreen" FontSize="12"
+                        Clicked="Housing_Clicked"/>
                 
                 <Image Source="Grocery.png" HeightRequest="50" Grid.Column="2"
                        Grid.Row="0"/>
                 <Button x:Name="Grocery" Text="Grocery" HeightRequest="20" Grid.Column="2"
-                        Grid.Row="1" BackgroundColor="ForestGreen" FontSize="12"/>
+                        Grid.Row="1" BackgroundColor="ForestGreen" FontSize="12"
+                        Clicked="Grocery_Clicked_1"/>
                 
                 <Image Source="Entertainment.png" HeightRequest="50" Grid.Column="0"
                        Grid.Row="2"/>
                 <Button x:Name="Entertainment" Text="Entertainment" HeightRequest="20" Grid.Column="0"
-                        Grid.Row="3" BackgroundColor="ForestGreen" FontSize="12"/>
+                        Grid.Row="3" BackgroundColor="ForestGreen" FontSize="12"
+                        Clicked="Entertainment_Clicked"/>
                 
                 <Image Source="Shopping.png" HeightRequest="50" Grid.Column="1" 
                        Grid.Row="2"/>
                 <Button x:Name="Shopping" Text="Shopping" HeightRequest="20" Grid.Column="1"
-                        Grid.Row="3" BackgroundColor="ForestGreen" FontSize="12"/>
+                        Grid.Row="3" BackgroundColor="ForestGreen" FontSize="12"
+                        Clicked="Shopping_Clicked"/>
                 
                 <Image Source="Other.png" HeightRequest="50" Grid.Column="2"
                        Grid.Row="2"/>
                 <Button x:Name="Other" Text="Other" HeightRequest="20" Grid.Column="2"
-                        Grid.Row="3" BackgroundColor="ForestGreen" FontSize="12"/>
+                        Grid.Row="3" BackgroundColor="ForestGreen" FontSize="12"
+                        Clicked="Other_Clicked"/>
 
 
             </Grid>

@@ -77,6 +77,36 @@ namespace ElsieBudget.Views
         {
 
         }
+
+        private void Medical_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Housing_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Grocery_Clicked_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Entertainment_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Shopping_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Other_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
     
 

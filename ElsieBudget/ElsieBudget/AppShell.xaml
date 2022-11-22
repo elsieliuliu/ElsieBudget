@@ -30,9 +30,9 @@
     </Shell.Resources>
 
     <TabBar>
-        <ShellContent x:Name="Home" Title="Home" Icon="icon_Home.png"  
+        <ShellContent x:Name="Home" Title="Home" Icon="Icon_Home.png"  
                       ContentTemplate="{DataTemplate local:MainPage}" />
-        <ShellContent x:Name="Add" Title="Add" Icon="Add.png" ContentTemplate="{DataTemplate local:ExpensePage}" />
+        <ShellContent x:Name="Add" Title="Add" Icon="Icon_Add.png" ContentTemplate="{DataTemplate local:ExpensePage}" />
     </TabBar>
 
     <!--
